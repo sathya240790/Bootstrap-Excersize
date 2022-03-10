@@ -1,0 +1,73 @@
+<br>
+<div class="container-fluid row bg-light">
+	<div class="col-lg-12">
+		<h5 class="text-info">Accounts Information</h5>
+	</div>
+	<div class="col-lg-7 row">
+		<div class="container-fluid">
+			<table class="table">
+				<thead>
+					<tr>
+						<th class="heading" style="background-color: #E8E8E8">Account</th>
+						<th class="rightHeading">
+							<dl>
+								<dt class="heading"><span style="color: #008ECC">^</span> Available Cash</dt>
+								<dd class="subHeading">Today's Change</dd>
+							</dl>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IRA - 5200</td>
+						<td align="right">
+							<dl>
+								<dt>$5,763.36</dt>
+								<dd style="color: #FF0000;">-0.08% / $8,916.69</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>AAA - 1812</td>
+						<td align="right">
+							<dl>
+								<dt>$2,010,926.10</dt>
+								<dd>+0.21% / $38,881.63</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>AAA - 3810</td>
+						<td align="right">
+							<dl>
+								<dt>$10,050,054.07</dt>
+								<dd>+0.07% / $8,916.69</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr *ngIf="isClicked">
+						<td>AAA - 3810</td>
+						<td align="right">
+							<dl>
+								<dt>$10,050,054.07</dt>
+								<dd>+0.07% / $8,916.69</dd>
+							</dl>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td (click)="showAlert()">
+							<label class="loadMore">Load more</label>
+						</td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	<div class="col-lg-5">
+		<br>
+		<app-bar-graph></app-bar-graph>
+	</div>
+</div>

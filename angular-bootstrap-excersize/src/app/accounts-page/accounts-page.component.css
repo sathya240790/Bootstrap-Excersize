@@ -1,0 +1,43 @@
+.heading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+.subHeading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em; 
+  color: slategray;
+}
+
+td{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #008ECC;
+}
+
+dt{
+  font-weight: bold;
+  color: black;
+}
+
+dd{
+  font-size: 0.8em;
+  color: #32CD32;
+}
+
+.table{
+  border: 5px solid #008ECC;
+  width: 100%;
+}
+
+.loadMore{
+  cursor: pointer;
+  position: relative;
+  left: 100%;
+  font-weight: normal;
+}
+
+.rightHeading{
+  text-align:right;
+  background-color:silver;
+}
